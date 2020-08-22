@@ -1,19 +1,10 @@
 package ru.live.kamaz_cs;
 
-public class Tester {
-    public static int job(int... ls) {
-        int sum = 0;
-        for (int l : ls) {
-            sum += l;
-        }
-        return sum;
+class Tester {
+    @Test(a = 5, b = 2)
+    public static int test(int a, int b) {
+        return a + b;
     }
 
-    @Test(a = 2, b = 5)
-    public static int test() {
-        int sum = job(2, 5);
-        //System.out.println("Tester: " + sum);
-        return sum;
-    }
 }
 
