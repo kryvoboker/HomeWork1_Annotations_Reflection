@@ -10,9 +10,10 @@ public class Tester {
     }
 
     @Test(a = 2, b = 5)
-    public void test() {
+    public static int test() {
         int sum = job(2, 5);
-        System.out.println("Tester: " + sum);
+        //System.out.println("Tester: " + sum);
+        return sum;
     }
 }
 
